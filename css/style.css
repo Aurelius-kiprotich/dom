@@ -52,3 +52,14 @@ input[type='submit']{
     color: white;
     padding: 4px 8px;
 }
+footer {
+    height: 50px;
+    border-top: 1px solid #484848;
+    color: #A16AE8;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
