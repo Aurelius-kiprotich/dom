@@ -16,6 +16,7 @@ header{
     height: 80px;
     color: white;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 form {
@@ -62,4 +63,52 @@ footer {
     bottom: 0;
     width: 100%;
 
+}
+@media  screen and (max-width:576px)  {
+    header {
+        height: 50px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .container{
+        padding: 0 10px;
+    }
+    form {
+        display: flex;
+        justify-content: space-between;
+    }
+    input[type='text']{
+        width: 80%;
+        padding: 5px;
+        font-size: 20px;
+        margin-right: 4px;
+    }
+    input[type='submit']{
+        font-size: 20px;
+        padding: 5px;
+        color: white;
+        background-color: #A16AE8;
+        border: 1px solid #A16AE8;
+    
+    }
+    #task {
+        width: 100%;
+    }
+    .task {
+        padding: 5px;
+        margin-bottom: 4px;
+        font-size: 19px;
+        align-items: flex-start;
+    }
+    footer {
+        padding: 0 30px;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    
 }
