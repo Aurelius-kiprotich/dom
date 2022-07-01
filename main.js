@@ -2,9 +2,17 @@ let form = document.querySelector('form')
 let tasks = document.querySelector('#tasks')
 let deleteButtons = document.querySelectorAll('button')
 
+const countTasks = () => {
+    let numberOfTask = tasks.children.length
+    let count =document.querySelector('#count')
+    count.textContent = `Task ${numberOfTask}`
+}
+countTasks()
+
 const deleteTask = e => {
     let task = e.target.parentElement
     tasks.removeChild(task)
+    countTasks()
 }
 
 const addTask = e => {
@@ -19,6 +27,7 @@ const addTask = e => {
     task.appendChild(p)
     task.appendChild(button)
     tasks.appendChild(task)
+    countTasks()
     form.reset()
 }
 deleteButtons.forEach(deleteButton => {
